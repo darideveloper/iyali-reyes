@@ -1,6 +1,6 @@
 import Title from "@/components/Title"
 import Image from "next/image"
-
+import Particle from "@/components/ornaments/Particle"
 
 export default function Coach() {
   return (
@@ -30,7 +30,19 @@ export default function Coach() {
         `}
       >
         <Title>
-          Yo soy tu Coach de Imagen Personal Consciente
+          <span
+            className={`
+              inline
+            `}
+          >
+            Yo soy tu Coach de Imagen Personal Consciente
+          </span>
+          <Particle
+            className={`
+              inline
+              ml-4
+            `}
+          />
         </Title>
         <p>
           Soy Coach de Imagen Personal Consciente y te ayudo a alinear tu imagen externa con tu esencia y tus metas personales.

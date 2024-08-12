@@ -6,7 +6,7 @@ import { fontTitle } from "@/data/fonts"
  * @param {string} props.children
  * @returns {JSX.Element}
  */
-export default function H3 ({ children }) {
+export default function H3 ({ children, className }) {
   return (
     <h3
       className={`
@@ -17,6 +17,7 @@ export default function H3 ({ children }) {
         mb-6
         text-center md:text-left
         leading-relaxed
+        ${className}
       `}
     >
       {children}
