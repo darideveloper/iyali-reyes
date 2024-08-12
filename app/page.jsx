@@ -1,5 +1,5 @@
-import Image from "next/image"
 import Hero from "@/sections/Hero"
+import Coach from "@/sections/Coach";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       `}
     >
       <Hero />
+      <Coach />
     </main>
   );
 }
