@@ -22,7 +22,7 @@ export default function Coach() {
           content
           flex
           flex-col
-          items-start
+          items-center
           justify-center
           gap-2
           text-center md:text-left

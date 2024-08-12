@@ -1,15 +1,13 @@
 import Hero from "@/sections/Hero"
-import Coach from "@/sections/Coach";
+import Coach from "@/sections/Coach"
+import Heals from "@/sections/Heals"
 
 export default function Home() {
   return (
-    <main 
-      className={`
-        
-      `}
-    >
+    <main>
       <Hero />
       <Coach />
+      <Heals />
     </main>
-  );
+  )
 }
