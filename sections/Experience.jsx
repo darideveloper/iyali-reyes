@@ -29,10 +29,12 @@ export default function Experience () {
         w-full
         relative
         py-20 md:py-48
+        bg-[url('/images/experience.webp')]
+        paralax
       `}
     >
 
-        <Image 
+        {/* <Image 
           src="/images/experience.webp"
           alt="Foto de Iyali Reyes en un bancon con vegetación"
           width={1500}
@@ -46,7 +48,7 @@ export default function Experience () {
             -z-10
             object-cover
           `}
-        />
+        /> */}
 
         <div 
           className={`
