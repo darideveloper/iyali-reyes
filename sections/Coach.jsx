@@ -64,6 +64,7 @@ export default function Coach() {
 
       <Image
         src="/images/coach.webp"
+        alt="Coach de Imagen Personal Consciente"
         width={600}
         height={400}
         className={`

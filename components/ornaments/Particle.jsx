@@ -11,7 +11,7 @@ export default function Particle({ className }) {
 
     <Image 
       src="/images/particle.svg"
-      alt="Particle"
+      alt="Particle vector"
       width={20}
       height={20}
       className={`

@@ -70,6 +70,7 @@ export default function Heals() {
       >
         <Image
           src="/images/heals.webp"
+          alt="Sana a través de tu imagen"
           width={700}
           height={400}
           className={`

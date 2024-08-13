@@ -10,7 +10,7 @@ export default function Flower({ className }) {
   return (
     <Image
       src="/images/flower.svg"
-      alt="Flower"
+      alt="Flower vector"
       width={400}
       height={400}
       className={`

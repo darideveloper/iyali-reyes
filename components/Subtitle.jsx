@@ -6,21 +6,21 @@ import { fontTitle } from "@/data/fonts"
  * @param {string} props.children
  * @returns {JSX.Element}
  */
-export default function Title ({ children, className }) {
+export default function Subtitle ({ children, className }) {
   return (
-    <h2
+    <h3
       className={`
         ${fontTitle.className}
-        text-3xl 
+        text-xl 
         text-brown
         font-bold
         mb-6
-        text-center md:text-left
+        text-center
         leading-loose
         ${className}
       `}
     >
       {children}
-    </h2>
+    </h3>
   )
 }
