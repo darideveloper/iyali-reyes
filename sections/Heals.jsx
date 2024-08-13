@@ -1,6 +1,8 @@
 import Title from "@/components/Title"
 import Image from "next/image"
 import Particle from "@/components/ornaments/Particle"
+import Flower from "@/components/ornaments/Flower"
+
 
 export default function Heals() {
   return (
@@ -9,7 +11,7 @@ export default function Heals() {
       className={`
         container
         max-w-7xl
-        py-16
+        pt-24
         flex
         flex-col md:flex-row-reverse
         items-center
@@ -27,6 +29,7 @@ export default function Heals() {
           gap-2
           text-center md:text-left
           w-full md:w-1/2 lg:w-5/12
+          relative
         `}
       >
         <Title>
@@ -35,6 +38,7 @@ export default function Heals() {
             className={`
               inline-block
               text-lg
+              leading-relaxed
             `}
           >
             Coaching Imagen Personal Consciente
@@ -43,16 +47,45 @@ export default function Heals() {
         <p>
           Conecta con tu identidad, recuerda tu brillo y la confianza en quién eres, para que expreses tu ser auténtico a través de la ropa.
         </p>
+
+        <Flower 
+          className={`
+            absolute
+            top-1/2
+            left-1/2
+            transform
+            -translate-x-1/2
+            -translate-y-1/2
+            -z-10
+          `}
+        />
       </div>
 
-      <Image
-        src="/images/heals.webp"
-        width={700}
-        height={400}
+      <div 
         className={`
+          img-wrapper
+          relative
           w-full md:w-1/2 lg:w-7/12
         `}
-      />
+      >
+        <Image
+          src="/images/heals.webp"
+          width={700}
+          height={400}
+          className={`
+            w-full
+          `}
+        />
+
+        <Particle 
+          className={`
+            absolute
+            top-10
+            left-10
+          `}
+        />
+
+      </div>
     </section>
   )
 }

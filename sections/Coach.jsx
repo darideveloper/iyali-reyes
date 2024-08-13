@@ -2,6 +2,7 @@ import Title from "@/components/Title"
 import Image from "next/image"
 import Particle from "@/components/ornaments/Particle"
 
+
 export default function Coach() {
   return (
     <section
@@ -9,7 +10,7 @@ export default function Coach() {
       className={`
         container
         max-w-7xl
-        py-16
+        pt-24
         flex
         flex-col md:flex-row
         items-center

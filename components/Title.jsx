@@ -11,12 +11,12 @@ export default function H3 ({ children, className }) {
     <h3
       className={`
         ${fontTitle.className}
-        text-3xl
+        text-4xl
         text-brown
         font-bold
         mb-6
         text-center md:text-left
-        leading-relaxed
+        leading-loose
         ${className}
       `}
     >
