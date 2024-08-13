@@ -14,9 +14,7 @@ export default function Video () {
       <div 
         className={`
           video-wapper
-          max-w-7xl
-          w-full
-          mx-auto
+          container
           relative
         `}
       >

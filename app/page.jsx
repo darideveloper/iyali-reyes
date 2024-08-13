@@ -4,7 +4,7 @@ import Heals from "@/sections/Heals"
 import Video from "@/sections/Video"
 import Services from "@/sections/Services"
 import Workshops from "@/sections/Workshops"
-
+import Experience from "@/sections/Experience"
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <Video />
       <Services />
       <Workshops />
+      <Experience />
     </main>
   )
 }

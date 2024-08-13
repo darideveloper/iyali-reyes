@@ -10,7 +10,6 @@ export default function Heals() {
       id="coach"
       className={`
         container
-        max-w-7xl
         pt-24
         flex
         flex-col md:flex-row-reverse

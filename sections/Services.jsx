@@ -34,7 +34,6 @@ export default function Services() {
       <div
         className={`
           container
-          max-w-7xl
         `}
       >
         <div
