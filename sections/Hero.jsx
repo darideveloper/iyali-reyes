@@ -13,23 +13,10 @@ export default function Hero() {
         w-full
         relative
         py-28
+        bg-[url('/images/hero.webp')]
+        paralax
       `}
     >
-      <Image
-        src="/images/hero.webp"
-        alt="Imagen de fondo de tela"
-        width={1300}
-        height={867}
-        className={`
-          w-full
-          h-full
-          absolute
-          top-0
-          left-0
-          -z-10
-          object-cover
-        `}
-      />
 
       <div
         className={`
