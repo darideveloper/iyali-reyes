@@ -12,7 +12,7 @@ export default function Hero() {
         hero
         w-full
         relative
-        py-28
+        py-40
         bg-[url('/images/hero.webp')]
         paralax
       `}
