@@ -50,13 +50,14 @@ export default function Hero() {
         <h1
           className={`
             ${fontTitle.className}
-            text-2xl sm:text-4xl lg:text-6xl
+            text-4xl sm:text-4xl lg:text-6xl
             flex
             flex-col
             items-center
             justify-center
             gap-3 sm:gap-6 lg:gap-10
             my-6
+            leading-loose
           `}
         >
           <span>
