@@ -1,9 +1,8 @@
 import Title from '@/components/Title'
-import Image from 'next/image'
 import Quote from '@/components/Quote'
 
 
-export default function Experience () {
+export default function Experience() {
 
   const quotesData = [
     {
@@ -34,60 +33,44 @@ export default function Experience () {
       `}
     >
 
-        {/* <Image 
-          src="/images/experience.webp"
-          alt="Foto de Iyali Reyes en un bancon con vegetación"
-          width={1500}
-          height={1000}
-          className={`
-            w-full
-            h-full
-            absolute
-            top-0
-            left-0
-            -z-10
-            object-cover
-          `}
-        /> */}
+      <div
+        className={`
+          container
+        `}
+      >
 
-        <div 
+        <Title
           className={`
-            container
+            text-white
           `}
         >
+          Experiencias de mis coachees
+        </Title>
 
-          <Title
-            className={`
-              text-white
-            `}
-          >
-            Experiencias de mis coachees
-          </Title>
-
-          <div 
-            className={`
-              quotes
-              grid
-              grid-cols-1 md:grid-cols-3
-              gap-16 md:gap-24
-              w-1/2 md:w-full
-              mx-auto
-            `}
-          >
-            {
-              quotesData.map((quote, index) => (
-                <Quote
-                  key={index}
-                  text={quote.text}
-                  author={quote.author}
-                />
-              ))
-            }
-
-          </div>
+        <div
+          className={`
+            quotes
+            grid
+            grid-cols-1 md:grid-cols-3
+            gap-16 md:gap-24
+            w-1/2 md:w-full
+            mx-auto
+          `}
+        >
+          {
+            quotesData.map((quote, index) => (
+              <Quote
+                key={index}
+                text={quote.text}
+                author={quote.author}
+              />
+            ))
+          }
 
         </div>
-    
+
+      </div>
+
     </section>
   )
 }
