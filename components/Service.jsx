@@ -9,7 +9,7 @@ import Link from 'next/link'
  * @param {string} props.imageSrc - service image source
  * @param {string} props.imageAlt - service image alt text
  * @param {string} props.link - service relative link
- * @returns {JSX.Element} - rendered Service card
+ * @returns {JSX.Element}
  */
 export default function Service({ title, imageSrc, imageAlt, link }) {
   return (

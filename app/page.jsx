@@ -5,6 +5,8 @@ import Video from "@/sections/Video"
 import Services from "@/sections/Services"
 import Workshops from "@/sections/Workshops"
 import Experience from "@/sections/Experience"
+import Contact from "@/sections/Contact"
+
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
       <Services />
       <Workshops />
       <Experience />
+      <Contact />
     </main>
   )
 }

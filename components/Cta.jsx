@@ -7,7 +7,7 @@ import Link from 'next/link'
  * @param {string} props.link - link to navigate to
  * @param {string} props.text - button text
  * @param {string} props.className - button extra classes
- * @returns {JSX.Element} - rendered CTA button
+ * @returns {JSX.Element}
  */
 export default function Cta({ link, text, className }) {
   return (
