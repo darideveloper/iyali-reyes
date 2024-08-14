@@ -12,15 +12,16 @@ export default function Hero() {
         w-full
         relative
         py-40
-        bg-[url('/images/hero.webp')]
+        bg-[url('/images/hero-2.webp')]
         paralax
+        bg-white
       `}
     >
 
       <div
         className={`
           container
-          text-white
+          text-brown
           text-center
           max-w-4xl
         `}
