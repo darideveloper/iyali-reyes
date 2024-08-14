@@ -6,6 +6,7 @@ import Services from "@/sections/Services"
 import Workshops from "@/sections/Workshops"
 import Experience from "@/sections/Experience"
 import Contact from "@/sections/Contact"
+import Podcast from "@/sections/Podcast"
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Workshops />
       <Experience />
       <Contact />
+      <Podcast />
     </main>
   )
 }
