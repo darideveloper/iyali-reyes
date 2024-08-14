@@ -7,6 +7,7 @@ import Social from '@/components/Social'
 import Input from '@/components/Input'
 import TextArea from '@/components/TextArea'
 import Select from '@/components/Select'
+import Image from 'next/image'
 
 import { socialsData } from '@/data/socials'
 import { servicesData } from '@/data/services'
@@ -107,8 +108,6 @@ export default function Contact() {
     >
       <div className={`
           socials-wrapper
-          bg-[url('/images/contact.webp')]
-          bg-brown
           bg-cover
           py-16 md:py-32
           px-6
@@ -117,9 +116,26 @@ export default function Contact() {
           justify-center 
           items-center md:items-end
           xl:col-span-2
+          relative
 
         `}
       >
+        <Image 
+          src='/images/contact.webp'
+          alt='Forma parte de mi comunidad'
+          width={600}
+          height={1200}
+          className={`
+            absolute
+            top-0
+            right-0
+            -z-10
+            w-full
+            h-full
+            object-cover            
+          `}
+        />
+
         <Subtitle
           className={`
             text-white
