@@ -27,6 +27,7 @@ export default function Social ({ title, link, className }) {
         ${className}
         md:text-2xl
       `}
+      target="_blank"
     >
       <Image 
         width={30}
