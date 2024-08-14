@@ -43,7 +43,7 @@ export default function Video () {
           className={`
             w-full
             h-auto
-            opacity-50
+            opacity-30
           `}
         >
           Tu navegador no soporta video HTML5
