@@ -19,7 +19,7 @@ export default function Social ({ title, link, className }) {
         items-center
         justify-center md:justify-start
         gap-2 hover:gap-6
-        my-6
+        py-3
         duration-200
         group
         ml-0 hover:ml-2
@@ -37,7 +37,7 @@ export default function Social ({ title, link, className }) {
         className={`
           icon
           duration-300
-          group-hover:scale-125
+          group-hover:scale-110
           w-8 sm:w-12
           h-8 sm:h-12
         `}
