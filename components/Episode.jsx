@@ -5,6 +5,7 @@ import CircleImage from '@/components/CircleImage'
 
 /**
  * Episode card component
+ * Podcast episode card with link, image, title and description
  * 
  * @param {object} props - component props
  * @param {string} props.title - episode title

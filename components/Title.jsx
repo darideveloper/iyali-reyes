@@ -2,6 +2,8 @@ import { fontTitle } from "@/data/fonts"
 
 /**
  * Title component
+ * h2 title with font title style
+ * 
  * @param {object} props
  * @param {string} props.children
  * @returns {JSX.Element}

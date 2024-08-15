@@ -1,5 +1,6 @@
 /**
  * Input component
+ * Basic input component with label and placeholder
  * 
  * @param {object} props - component props
  * @param {string} props.label - input label

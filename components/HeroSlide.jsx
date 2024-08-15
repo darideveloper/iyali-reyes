@@ -5,6 +5,8 @@ import Image from 'next/image'
 
 /**
  * Hero slide component
+ * Swiper slide with hero content
+ * 
  * @param {object} props - component props
  * @param {number} props.index - slide index
  * @param {object} props.texts - slide text object

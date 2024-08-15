@@ -1,5 +1,6 @@
 /**
  * TextArea component
+ * Textarea input with label and options (based in input component)
  * 
  * @param {object} props - component props
  * @param {string} props.label - input label

@@ -5,6 +5,8 @@ import CircleImage from './CircleImage'
 
 /**
  * Service card component
+ * Service card with link, image and title
+ * 
  * @param {object} props - component props
  * @param {string} props.title - service title
  * @param {string} props.imageSrc - service image source

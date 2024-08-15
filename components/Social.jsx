@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 /**
  * Social icon component
+ * Social icon with link and image
+ * 
  * @param {object} props - component props
  * @param {string} props.title - social icon title
  * @param {string} props.name - social icon name (for image file)

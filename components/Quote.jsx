@@ -1,5 +1,7 @@
 /**
  * Quote component
+ * Text with author and decorative quote icon
+ * 
  * @param {object} props
  * @param {string} props.text
  * @param {string} props.author

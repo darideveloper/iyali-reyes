@@ -2,7 +2,8 @@ import Subtitle from '@/components/Subtitle'
 
 
 /**
- * SquereCard component (footer card)
+ * SquereCard component
+ * Squere card with title and children for footer
  * 
  * @param {object} props - component props
  * @param {string} props.title - card title
