@@ -12,7 +12,7 @@ import Episodes from "@/sections/Episodes"
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <Coach />
       <Heals />
@@ -23,6 +23,6 @@ export default function Home() {
       <Contact />
       <Podcast />
       <Episodes />
-    </main>
+    </>
   )
 }

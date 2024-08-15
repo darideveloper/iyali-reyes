@@ -1,6 +1,7 @@
 import './globals.sass'
 
 import { fontBody } from "@/data/fonts"
+import Footer from "@/sections/Footer"
 
 export const metadata = {
   title: "Create Next App",
@@ -10,7 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={fontBody.className}>{children}</body>
+      <body className={fontBody.className}>
+        <main>
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }

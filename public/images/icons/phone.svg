@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>phone-svg</title>
+	<style>
+		.s0 { fill: #e6ddd8 } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m24 12c0 6.6-5.4 12-12 12-6.6 0-12-5.4-12-12 0-6.6 5.4-12 12-12 6.6 0 12 5.4 12 12zm-7.5 5.3l-1.8-3.4-1 0.5c-1.1 0.6-3.4-3.9-2.3-4.5l1-0.5-1.7-3.4-1.1 0.5c-3.6 1.9 2.2 13 5.8 11.3z"/>
+</svg>

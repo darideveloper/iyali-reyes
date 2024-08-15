@@ -159,8 +159,12 @@ export default function Contact() {
             socialsData.map((social, index) => (
               <Social
                 key={index}
+                name={social.title}
                 title={social.title}
                 link={social.link}
+                className={`
+                  py-3
+                `}
               />
             ))
           }

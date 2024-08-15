@@ -11,6 +11,7 @@ export default function Episodes() {
       className={`
         episodes
         mt-24
+        mb-12
         overflow-hidden
         relative
         w-full
