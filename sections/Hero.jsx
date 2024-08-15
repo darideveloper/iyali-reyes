@@ -1,76 +1,56 @@
-import Cta from "@/components/Cta"
+"use client"
 
-import { fontTitle } from "@/data/fonts"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules'
+import { heroData } from '@/data/hero'
 
+import HeroSlide from '@/components/HeroSlide'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 export default function Hero() {
   return (
-    <section 
+    <section
       id="hero"
       className={`
         hero
         w-full
         relative
-        py-40
-        bg-[url('/images/hero-2.webp')]
-        paralax
         bg-white
       `}
     >
-
-      <div
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        modules={[Navigation, Pagination, A11y, Autoplay]}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 7000,
+          disableOnInteraction: false,
+        }}
         className={`
-          container
-          text-brown
-          text-center
-          max-w-4xl
+          w-full
         `}
       >
-        <p
-          className={`
-            uppercase
-            text-lg
-          `}
-        >
-          Bienvenida a tu nueva piel
-        </p>
-        <h1
-          className={`
-            ${fontTitle.className}
-            text-4xl sm:text-4xl lg:text-6xl
-            flex
-            flex-col
-            items-center
-            justify-center
-            gap-3 sm:gap-6 lg:gap-10
-            my-6
-            leading-loose
-          `}
-        >
-          <span>
-            Imagen Personal
-          </span>
-          <span>
-            Consciente
-          </span>
-          <p
-            className={`
-              text-lg sm:text-xl lg:text-2xl
-              mt-0 lg:-mt-4
-            `}
-          >
-            Iyali Reyes 
-          </p>
-        </h1>
+        {
+          heroData.map((slide, index) => (
+            <SwiperSlide
+              key={index}
+            >
+              <HeroSlide 
+                index={index}
+                texts={slide.texts}
+                cta={slide.cta}
+              />
+              
+            </SwiperSlide>
+          ))
+        }
+      </Swiper>
 
-        <Cta 
-          link="/#services"
-          text="Saber más"
-          className={`
-            my-8
-          `}
-        />
-      </div>
 
     </section>
   )
