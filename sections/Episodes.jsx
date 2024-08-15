@@ -2,8 +2,7 @@ import Title from '@/components/Title'
 import Particle from '@/components/ornaments/Particle'
 import Episode from '@/components/Episode'
 
-import { servicesData } from '@/data/services'
-
+import { episodesData } from '@/data/episodes'
 
 export default function Episodes() {
   return (
@@ -23,6 +22,7 @@ export default function Episodes() {
           container
         `}
       >
+
         <div
           className={`
             title-wrapper
@@ -31,43 +31,33 @@ export default function Episodes() {
             justify-center
           `}
         >
-          <Particle
-            className={`
-              mb-6
-            `}
-          />
           <Title
             className={`
-              mx-4
+              mx-auto
             `}
           >
-            De mi para ti
+            Episodios destacados
           </Title>
-          <Particle
-            className={`
-              mb-6
-            `}
-          />
         </div>
 
         <section
           className={`
-            services-wrapper
+            episodes-wrapper
             grid
             grid-cols-1 md:grid-cols-3
             gap-12
           `}>
 
           {
-            servicesData.map((service, index) => {
-              const slug = service.title.toLowerCase().replace(' ', '-')
+            episodesData.map((episode, index) => {
               return (
                 <Episode
                   key={index}
-                  title={service.title}
-                  imageSrc={`/images/services/${slug}.webp`}
-                  imageAlt={`Mi servicio ${service.title}`}
-                  link={`/services/${slug}`}
+                  title={episode.title}
+                  imageSrc={`/images/episodes/${index + 1}.webp`}
+                  imageAlt={`Miniatura de episodio destacado: ${episode.title}`}
+                  link={episode.link}
+                  description={episode.description}
                 />
               )
 

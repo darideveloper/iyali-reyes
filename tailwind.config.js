@@ -18,6 +18,8 @@ module.exports = {
       "white": "#e6ddd8",
       "brown": "#623e2a",
       "brown-light": "#cea791",
+      "brown-dark": "#261106",
+      "black": "#000",
       "transparent": "transparent",
     }
   },
