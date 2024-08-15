@@ -18,7 +18,36 @@ import Image from 'next/image'
  * @param {string} props.cta.link - call to action link
  * @returns 
  */
-export default function HeroSlide ({ index, texts, cta }) {
+export default function HeroSlide({ index, texts, cta }) {
+
+  const titleContent = (
+    <>
+      <span>
+        {texts.middle}
+      </span>
+      <p
+        className={`
+          text-lg sm:text-xl lg:text-2xl
+          mt-0 lg:-mt-4
+        `}
+      >
+        {texts.bottom}
+      </p>
+    </>
+  )
+
+  const titleClassName = `
+    ${fontTitle.className}
+    text-4xl sm:text-4xl lg:text-6xl
+    flex
+    flex-col
+    items-center
+    justify-center
+    gap-3 sm:gap-6 lg:gap-10
+    my-6
+    leading-loose
+  `
+
   return (
     <div
       className={`
@@ -35,7 +64,7 @@ export default function HeroSlide ({ index, texts, cta }) {
         justify-center
       `}
     >
-      <Image 
+      <Image
         src={`/images/hero/${index + 1}.webp`}
         alt={`Imagen de fondo ${texts.middle}`}
         layout="fill"
@@ -60,31 +89,28 @@ export default function HeroSlide ({ index, texts, cta }) {
       >
         {texts.top}
       </p>
-      <h1
-        className={`
-          ${fontTitle.className}
-          text-4xl sm:text-4xl lg:text-6xl
-          flex
-          flex-col
-          items-center
-          justify-center
-          gap-3 sm:gap-6 lg:gap-10
-          my-6
-          leading-loose
-        `}
-      >
-        <span>
-          {texts.middle}
-        </span>
-        <p
-          className={`
-            text-lg sm:text-xl lg:text-2xl
-            mt-0 lg:-mt-4
-          `}
-        >
-          {texts.bottom}
-        </p>
-      </h1>
+      
+      {
+        index === 0
+          ? (
+            <h1
+              className={`
+                ${titleClassName}
+              `}
+            >
+              {titleContent}
+            </h1>
+          )
+          : (
+            <h2
+              className={`
+                ${titleClassName}
+              `}
+            >
+              {titleContent}
+            </h2>
+          )
+      }
 
       <Cta
         link={cta.link}
