@@ -25,6 +25,7 @@ export default function Input({label, name, type, required = false, value, setVa
         border-brown-light
         border-solid
         rounded-md
+        ${type === "hidden" && "hidden"}
       `}
     > 
       <label 

@@ -8,22 +8,35 @@ import Input from '@/components/Input'
 import TextArea from '@/components/TextArea'
 import Select from '@/components/Select'
 import Image from 'next/image'
+import Swal from 'sweetalert2'
 
+import { useRouter } from 'next/navigation'
 import { socialsData } from '@/data/socials'
 import { servicesData } from '@/data/services'
+import { fromCredentials, formHost } from '@/data/form'
 import { useState, useEffect } from 'react'
+
 
 
 export default function Contact() {
 
+  // Pages states
+  const router = useRouter()
+  const [currentPage, setCurrentPage] = useState('')
+
+  const servicesNames = servicesData.map(service => service.title)
+
+  // Inputs states
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
-  const [service, setService] = useState('')
+  const [service, setService] = useState(servicesNames[0])
   const [isReady, setIsReady] = useState(false)
+  const [inputUser, setInputUser] = useState(fromCredentials.user)
+  const [inputApiKey, setInputApiKey] = useState(fromCredentials.apiKey)
+  const [inputRedirect, setInputRedirect] = useState("")
 
-  const servicesNames = servicesData.map(service => service.title)
 
   const inputsData = [
     {
@@ -81,6 +94,29 @@ export default function Contact() {
       "options": [],
       "fullWidth": true,
     },
+
+    // Hidden inputs
+    {
+      "label": "user",
+      "name": "user",
+      "type": "hidden",
+      "value": inputUser,
+      "setValue": setInputUser
+    },
+    {
+      "label": "api_key",
+      "name": "api_key",
+      "type": "hidden",
+      "value": inputApiKey,
+      "setValue": setInputApiKey
+    },
+    {
+      "label": "redirect",
+      "name": "redirect",
+      "type": "hidden",
+      "value": inputRedirect,
+      "setValue": setInputRedirect
+    }
   ]
 
   useEffect(() => {
@@ -94,6 +130,38 @@ export default function Contact() {
     }
   }, [name, email, phone, message, service])
 
+
+
+  // Show alert in thanks page
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const page = window.location.href
+      setCurrentPage(page)
+      if (page.includes('thanks=true')) {
+        Swal.fire({
+          title: 'Gracias por contactarnos',
+          text: 'En breve nos pondremos en contacto contigo',
+          icon: 'success',
+          confirmButtonText: 'Ok'
+        })
+        
+        // Redirect to home after click in "ok"
+        .then((res) => {
+          if (res.isConfirmed) {
+            // Get url without thanks poram
+            const initialUrl = page.split('?')[0]
+            window.location.href = initialUrl
+          }
+        })
+      }
+    }
+  }, [router])
+
+
+  // Update redirect page
+  useEffect(() => {
+    setInputRedirect(`${currentPage}?thanks=true`)
+  }, [currentPage])
 
   return (
     <section
@@ -185,7 +253,7 @@ export default function Contact() {
         </Title>
 
         <form
-          action="#"
+          action={formHost}
           method="post"
           className={`
             w-full
