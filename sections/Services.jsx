@@ -73,14 +73,13 @@ export default function Services() {
 
           {
             servicesData.map((service, index) => {
-              const slug = service.title.toLowerCase().replace(' ', '-')
               return (
                 <Service
                   key={index}
                   title={service.title}
-                  imageSrc={`/images/services/${slug}.webp`}
+                  imageSrc={`/images/services/${service.slug}.webp`}
                   imageAlt={`Mi servicio ${service.title}`}
-                  link={`/services/${slug}`}
+                  link={`/services/${service.slug}`}
                 />
               )
 
