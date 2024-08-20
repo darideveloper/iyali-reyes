@@ -10,7 +10,7 @@ const serviceColorimetriaText = `
   - Cómo combinar colores en tu ropa para lucir moderna y destacarte.
   - Meditación de color para conocer tus estados emocionales con los colores y otorgarles un significado personal.
 
-  ### Incluye
+  ## Incluye
 
   - Abanico personalizado con tu colorimetría.
   - Archivo con fotos de tus mejores colores.
@@ -34,7 +34,7 @@ const serviceClosetText = `
 const servicePersonalText = `
   Comenzamos identificando tu estilo, identidad y vemos si tienes desarrollada tu Autoimagen de forma positiva. Revisamos virtualmente tu clóset para determinar qué es funcional y luego trazamos una ruta de compras tomando en cuenta  tu Autoimagen y estilo, de igual forma acorde a tu presupuesto. Durante la visita a la tienda, aprenderás a identificar las prendas que son congruentes con lo que ya trabajamos, conocerás sobre telas, texturas y cómo combinarlas para crear outfits que reflejen tus intereses, mensaje y estilo de vida.
 
-  ### Lo que aprenderás:
+  ## Lo que aprenderás:
 
   - Trabajo personal e interno para desarrollar un estilo y una AUTOIMAGEN POSITIVA.
   - Cómo comprar en tiendas 
@@ -43,17 +43,28 @@ const servicePersonalText = `
 `
 
 
+const payLink = "https://www.paypal.com/paypalme/FranciscoDari?country.x=MX&locale.x=es_XC"
+
 export const servicesData = [
   {
     "title": "Colorimetría Emocional",
     "text": serviceColorimetriaText,
+    "slug": "colorimetria-emocional",
+    "price": 1500,
+    "payLink": payLink,
   }, 
   {
     "title": "Closet Detox",
     "text": serviceClosetText,
+    "slug": "closet-detox",
+    "price": 1600,
+    "payLink": payLink,
   },
   {
     "title": "Personal Shopper",
     "text": servicePersonalText,
+    "slug": "personal-shopper",
+    "price": 1800,
+    "payLink": payLink,
   }
 ]

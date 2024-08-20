@@ -2,31 +2,39 @@
 @tailwind components
 @tailwind utilities
 
-body
-    margin: 0
-    padding: 0
-    width: 100%
-    background-color: theme('colors.white')
+  // Loadl local fonts
+@font-face
+  font-family: 'title'
+  src: url('/fonts/tan-pearl.woff2') format('woff2'),
+  font-weight: normal
+  font-style: normal
 
+body
+  margin: 0
+  padding: 0
+  width: 100%
+  background-color: theme('colors.white')
+
+
+// Smoth scroll
 html
-    // Smoth scroll
-    scroll-behavior: smooth
+  scroll-behavior: smooth
 
 .container
-    margin-right: auto
-    margin-left: auto
-    padding-right: 1rem
-    padding-left: 1rem
-    max-width: 80rem
+  margin-right: auto
+  margin-left: auto
+  padding-right: 1rem
+  padding-left: 1rem
+  max-width: 80rem
 
 .debug
-    border: 1px solid red !important
+  border: 1px solid red !important
 
 .paralax
-    background-attachment: fixed
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
 
 // swipper custom styles
 .swiper-button-next, .swiper-button-prev
@@ -44,3 +52,19 @@ html
 
     &:after
       font-size: 20px
+
+.markdown
+  p, h2, h3
+    margin: 1rem 0
+
+  h2
+    font-size: 20px
+    font-family: 'title'
+    color: theme('colors.brown')
+    font-weight: bold
+    text-align: center
+
+  ul
+    li
+      list-style: inside
+      margin-left: 2rem
