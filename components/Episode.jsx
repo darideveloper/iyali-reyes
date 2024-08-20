@@ -32,6 +32,7 @@ export default function Episode({ title, imageSrc, imageAlt, link, description }
           p-4
           rounded-lg
         `}
+        target="_blank"
       >
 
         <CircleImage 
