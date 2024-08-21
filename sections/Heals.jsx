@@ -41,7 +41,7 @@ export default function Heals() {
               leading-relaxed
             `}
           >
-            Coaching 1 a 1 Imagen Personal Consciente
+            Coaching Imagen Personal Consciente 1:1
           </span>
         </Title>
         <p>
@@ -50,7 +50,7 @@ export default function Heals() {
 
         <Cta 
           link="/files/brochure-coaching.pdf"
-          text="Conoce más"
+          text="Get it Now"
           dark={true}
           className={`
             mt-6
