@@ -24,7 +24,6 @@ export default function Cta({ link, text, dark, target, className }) {
         hover:bg-transparent
         ${dark ? 'text-white' : 'text-brown'}
         ${dark ? 'hover:text-brown' : 'hover:text-white'}
-        rounded-full
         font-bold
         uppercase
         px-12
