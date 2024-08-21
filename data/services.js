@@ -15,6 +15,13 @@ const serviceColorimetriaText = `
   - Abanico personalizado con tu colorimetría.
   - Archivo con fotos de tus mejores colores.
   - Plantillas de trabajo
+
+  ## Detalles
+
+  - Sesiones: **2**
+  - Duración: **4 hrs**
+  - Reserva con el **60% al inicio**
+  - Inversión: **254 dls / $4,800**
 `
 
 const serviceClosetText = `
@@ -29,6 +36,13 @@ const serviceClosetText = `
   - Categorizar tus prendas
   - Formulas para combinar ropa
   - Archivo de fotos con looks diferentes
+
+  ## Detalles
+
+  - Sesiones: **2**
+  - Duración: **4 hrs**
+  - Reserva con el **60% al inicio**
+  - Inversión: **361 dls / $6,800**
 `
 
 const servicePersonalText = `
@@ -40,6 +54,13 @@ const servicePersonalText = `
   - Cómo comprar en tiendas 
   - Qué falta en mi closet
   - Budget list de compras personalizada
+
+  ## Detalles
+
+  - Sesiones: **2 (1 en tienda)**
+  - Duración: **6 hrs**
+  - Reserva con el **60% al inicio**
+  - Inversión: **361 dls / $6,800**
 `
 
 
@@ -50,21 +71,21 @@ export const servicesData = [
     "title": "Colorimetría Emocional",
     "text": serviceColorimetriaText,
     "slug": "colorimetria-emocional",
-    "price": 1500,
+    "price": "$4,800",
     "payLink": payLink,
   }, 
   {
     "title": "Closet Detox",
     "text": serviceClosetText,
     "slug": "closet-detox",
-    "price": 1600,
+    "price": "$6,800",
     "payLink": payLink,
   },
   {
     "title": "Personal Shopper",
     "text": servicePersonalText,
     "slug": "personal-shopper",
-    "price": 1800,
+    "price": "$6,800",
     "payLink": payLink,
   }
 ]
