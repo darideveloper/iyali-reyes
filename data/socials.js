@@ -1,11 +1,11 @@
 export const socialsData = [
   {
     "title": "instagram",
-    "link":  "https://www.instagram.com/iya.imagenconsciente/?utm_source=qr",
+    "link":  "https://www.instagram.com/iya.imagenconsciente/",
   },
   {
     "title": "tiktok",
-    "link":  "https://www.tiktok.com/@iya.manosalamoda?_t=8ocogn4ZkFa&_r=1",
+    "link":  "https://www.tiktok.com/@iya.manosalamoda",
   },
   {
     "title": "spotify",
