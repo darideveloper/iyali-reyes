@@ -16,9 +16,10 @@ import Image from 'next/image'
  * @param {object} props.cta - slide call to action object
  * @param {string} props.cta.text - call to action text
  * @param {string} props.cta.link - call to action link
+ * @param {string} props.image - slide image src
  * @returns 
  */
-export default function HeroSlide({ index, texts, cta }) {
+export default function HeroSlide({ index, texts, cta, image }) {
 
   const titleContent = (
     <>
@@ -65,7 +66,7 @@ export default function HeroSlide({ index, texts, cta }) {
       `}
     >
       <Image
-        src={`/images/hero/${index + 1}.webp`}
+        src={`/images/hero/${image}`}
         alt={`Imagen de fondo ${texts.middle}`}
         layout="fill"
         objectFit="cover"

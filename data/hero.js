@@ -1,6 +1,18 @@
 export const heroData = [
   {
     "texts": {
+      "top": 'BienvenidO NUEVO AÑO',
+      "middle": "2025",
+      "bottom": "New mindset New image",
+    },
+    "cta": {
+      "text": "Get In",
+      "link": "/#contact"
+    },
+    "image": "2025.webp"
+  },
+  {
+    "texts": {
       "top": 'Bienvenida a tu nueva piel',
       "middle": "Imagen Personal Consciente",
       "bottom": "Iyali Reyes", 
@@ -8,7 +20,8 @@ export const heroData = [
     "cta": {
       "text": "Saber más",
       "link": "/#services"
-    }
+    },
+    "image": "welcome.webp"
   },
   {
     "texts": {
@@ -19,6 +32,7 @@ export const heroData = [
     "cta": {
       "text": "Contáctame",
       "link": "/#contact"
-    }
-  }
+    },
+    "image": "iam.webp"
+  },
 ]

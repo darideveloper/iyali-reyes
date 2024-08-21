@@ -44,6 +44,7 @@ export default function Hero() {
                 index={index}
                 texts={slide.texts}
                 cta={slide.cta}
+                image={slide.image}
               />
               
             </SwiperSlide>
