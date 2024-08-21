@@ -6,16 +6,16 @@ export default function Experience() {
 
   const quotesData = [
     {
-      "text": "Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.",
-      "author": "Santa Solana Post"
+      "text": "Me siento extraordinaria, y es gracias a que pude conectar conmigo a través del estilo y se lo debo a mi coach Iya Reyes, gracias a su coaching pude conectar con la persona en mi interior que quiere expresar quien es con su estilo.",
+      "author": "Karina Hernández"
     },
     {
-      "text": "Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.",
-      "author": "Mariana's Luxe Travels"
+      "text": "Iya fue mi invdersión en mi, me ayudo a descubrir mi estilo, me hizo sentir muy cómoda y que yo lo podía todo, ya no tengo los mismos habitos al vestir, ahora pienso que hare, como me quiero sentir y en qué quiero proyectar antes de vestirme.",
+      "author": "Mariana Tomasini"
     },
     {
-      "text": "Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.",
-      "author": "Fairhill Journal"
+      "text": "Tengo mayor experiencia en que comprar, que es lo que me queda, Iya me fue llevando de la mano y ya identifico mi estilo, qué telas, ahora si ya no me dan miedo las tiendas, llevaba toda la vida sin entrar.",
+      "author": "Pam Villa"
     },
   ]
 
