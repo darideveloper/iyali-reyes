@@ -64,7 +64,7 @@ const servicePersonalText = `
 `
 
 
-const payLink = "https://www.paypal.com/paypalme/FranciscoDari?country.x=MX&locale.x=es_XC"
+const payLink = "https://paypal.me/brandmeupmx?country.x=MX&locale.x=es_XC"
 
 export const servicesData = [
   {
