@@ -28,15 +28,18 @@ export const workshopsData = [
     "image": "embracing.webp",
     "title": "Embracing Self-Love in Full Color",
     "text": textWorkshop1,
+    "id": "workshop1",
   },
   {
     "image": "sep-2024.webp",
     "title": "MARTES 24 de SEPTIEMBRE de 2024",
     "text": textWorkshop2,
+    "id": "workshop2",
   },
   {
     "image": "2025.webp",
     "title": "2025 New mindset-New image",
     "text": textWorkshop3,
+    "id": "workshop3",
   },
 ]

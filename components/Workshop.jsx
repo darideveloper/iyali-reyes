@@ -12,9 +12,10 @@ import { marked } from 'marked'
  * @param {string} props.image - workshop image
  * @param {string} props.title - workshop title
  * @param {string} props.text - workshop
+ * @param {string} props.id - workshop html id
  * @returns {JSX.Element} Workshop component
  */
-export default function Workshop({ image, title, text }) {
+export default function Workshop({ image, title, text, id }) {
 
   const textHtml = marked(text)
 
@@ -27,6 +28,7 @@ export default function Workshop({ image, title, text }) {
         gap-8
         my-20
       `}
+      id={id}
     >
       <div
         className={`

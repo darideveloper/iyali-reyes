@@ -39,6 +39,7 @@ export default function Workshops() {
               image={workshop.image}
               title={workshop.title}
               text={workshop.text}
+              id={workshop.id}
             />
           ))
         }

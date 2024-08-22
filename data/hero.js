@@ -7,7 +7,7 @@ export const heroData = [
     },
     "cta": {
       "text": "Get In",
-      "link": "/#contact"
+      "link": "/#workshop3"
     },
     "image": "2025.webp"
   },
