@@ -23,13 +23,17 @@ export default function HeroSlide({ index, texts, cta, image }) {
 
   const titleContent = (
     <>
-      <span>
+      <span
+        className={`
+          font-bold
+        `}
+      >
         {texts.middle}
       </span>
       <p
         className={`
-          text-lg sm:text-xl lg:text-2xl
-          mt-0 lg:-mt-4
+          text-2xl
+          mt-20
         `}
       >
         {texts.bottom}
