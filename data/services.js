@@ -73,6 +73,7 @@ export const servicesData = [
     "slug": "colorimetria-emocional",
     "price": "$4,800",
     "payLink": payLink,
+    "priceInitial": "$2,880",
   }, 
   {
     "title": "Closet Detox",
@@ -80,6 +81,7 @@ export const servicesData = [
     "slug": "closet-detox",
     "price": "$6,800",
     "payLink": payLink,
+    "priceInitial": "$4,080",
   },
   {
     "title": "Personal Shopper",
@@ -87,5 +89,6 @@ export const servicesData = [
     "slug": "personal-shopper",
     "price": "$6,800",
     "payLink": payLink,
+    "priceInitial": "$4,080",
   }
 ]

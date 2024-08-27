@@ -21,7 +21,7 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
 
   const { slug } = params
-  const { title, text, price, payLink } = servicesData.find((service) => service.slug === slug)
+  const { title, text, price, priceInitial, payLink } = servicesData.find((service) => service.slug === slug)
   const textHtml = marked(text)
 
   return (
@@ -79,7 +79,7 @@ export default async function Page({ params }) {
         </Title>
         <Cta 
           link={payLink}
-          text={`${price} MXN`}
+          text={`Reserva con ${priceInitial} MXN`}
           dark={true}
           target="_blank"
           className={`
