@@ -142,13 +142,18 @@ export default function Contact() {
           title: 'Gracias por contactarnos',
           text: 'En breve nos pondremos en contacto contigo',
           icon: 'success',
-          confirmButtonText: 'Ok'
+          confirmButtonText: 'Escuchar meditación'
         })
         
         // Redirect to home after click in "ok"
         .then((res) => {
           if (res.isConfirmed) {
-            // Get url without thanks poram
+            
+            // Open audio in soundcloud in new tab
+            const audioLink = "https://soundcloud.com/manos-a-la-moda/meditacion-thetahealing-desbloquea-pensamientos-negativos-y-activa-tu-belleza/s-FxR9hvWDySl?si=8895a7cb59dd484c83f3626da7ad7d90"
+            window.open(audioLink, '_blank')
+            
+            // Redirect to initial page
             const initialUrl = page.split('?')[0]
             window.location.href = initialUrl
           }
@@ -248,9 +253,32 @@ export default function Contact() {
           container
         `}
       >
-        <Title>
+        <Title
+          className={`
+            mb-0
+            p-0
+          `}
+        >
           Envíame un mensaje
         </Title>
+
+        <p
+          className={`
+            text-brown
+            p-0
+            m-0
+            mb-6
+          `}
+        >
+          Y podrás escuchar gratis mi &nbsp; 
+          <span
+            className={`
+              font-bold
+            `}
+          >
+            Meditación ThetaHealing
+          </span>
+        </p>
 
         <form
           action={formHost}
