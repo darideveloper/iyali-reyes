@@ -10,8 +10,8 @@ export const episodesData = [
     "link": "https://open.spotify.com/episode/2hXpDtfQTElUWqX4aoFo2C",
   }, 
   {
-    "title": "¿Cambio de Nombre?",
-    "description": "Hoy necesito que me ayuden, estoy por cambiarle el nombre a este Podcast que me ha enseñado tanto, y he visto reflejada mi evolución desde el episodio 01 hasta ahora...",
-    "link": "https://open.spotify.com/episode/6ETYsY7KCyZC1fvKTKmM7J",
+    "title": "EP026 Diferencia entre Coach de Imagen y Asesor de Imagen Tradicional ¿Es mejor?",
+    "description": "En este episodio, tengo el placer de entrevistar a mi querida teacher Michelle Bilodeau, destacada Coach de Imagen quien nos cuenta las diferencias entre el coaching de imagen y la asesoría de imagen...",
+    "link": "https://open.spotify.com/episode/2vt5uyVzQYTpQbI4HZUhlg?si=i2OMri7lSjOpoI1qKTaQEg&nd=1&dlsi=aa4fd2b59c3347a8",
   }, 
 ]
