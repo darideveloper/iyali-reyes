@@ -1,4 +1,5 @@
 import Title from '@/components/Title'
+import Cta from '@/components/Cta'
 
 export default function Video () {
   return (
@@ -18,21 +19,39 @@ export default function Video () {
           relative
         `}
       >
-        <Title
+        <div 
           className={`
-            uppercase
-            text-white
-            text-center
+            content
             absolute
             top-1/2
             left-1/2
             transform
             -translate-x-1/2
             -translate-y-1/2
+            z-10
+            flex
+            flex-col
+            justify-center
+            items-center
           `}
         >
-          Ser para florecer
-        </Title>
+          <Title
+            className={`
+              uppercase
+              text-white
+              text-center
+            `}
+          >
+            Ser para florecer
+          </Title>
+
+          <Cta 
+            link="https://drive.google.com/file/d/1Relkgd_9GN1c0BklrY_C0WST-6fLuWyQ/view?usp=sharing"
+            text="Descarga mi último Webinar"
+            target="_blank"
+          />
+        </div>
+
 
         <video 
           src="/videos/video.mp4"
