@@ -9,8 +9,6 @@ import { workTimeData } from '@/data/workTime'
 
 export default function Footer() {
 
-
-
   return (
     <footer
       className={`
@@ -63,7 +61,7 @@ export default function Footer() {
           </SquereCard>
 
           <SquereCard 
-            title="Horas de oficina"
+            title="Horario de atención"
             className={`
             `}
           >
