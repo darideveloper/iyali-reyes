@@ -33,7 +33,7 @@ export default function Workshop({ image, title, text, id }) {
       <div
         className={`
           title-wrapper
-          [writing-mode:vertical-lr]
+          [writing-mode:vertical-rl;]
           flex
           items-center
           justify-center
