@@ -1,7 +1,7 @@
 export const heroData = [
   {
     "texts": {
-      "top": 'BienvenidO NUEVO AÑO',
+      "top": 'Bienvenido NUEVO AÑO',
       "middle": "2025",
       "bottom": "New mindset New image",
     },
