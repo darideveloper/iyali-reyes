@@ -1,9 +1,8 @@
 import Title from '@/components/Title'
 import Workshop from '@/components/Workshop'
+import CtaForm from '@/components/CtaForm'
 
-import { fontTitle } from '@/data/fonts'
 import { workshopsData } from '@/data/workshops'
-
 
 export default function Workshops() {
   return (
@@ -44,6 +43,8 @@ export default function Workshops() {
           ))
         }
       </div>
+
+      <CtaForm />
 
     </section>
   )

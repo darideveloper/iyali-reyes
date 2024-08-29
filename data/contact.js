@@ -19,3 +19,5 @@ export const contactData = [
     "title": phone,
   },
 ]
+
+export const formLink = "https://forms.gle/WMj24XX1Gqust3Gt5"

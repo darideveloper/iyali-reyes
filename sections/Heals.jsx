@@ -54,6 +54,7 @@ export default function Heals() {
           dark={true}
           className={`
             mt-6
+            mx-auto md:mx-0
           `}
           target="_blank"
         />
