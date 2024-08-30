@@ -24,7 +24,7 @@ export default function CtaForm({ dark = true, className = "" }) {
     >
       <Cta
         link={formLink}
-        text="Agenda una cita"
+        text="Diagnostico de Imagen"
         dark={dark}
         className={`
           scale-1190
