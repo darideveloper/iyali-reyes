@@ -259,7 +259,10 @@ export default function Contact() {
             p-0
           `}
         >
-          Envíame un mensaje
+          Escucha gratis mi &nbsp; 
+          <span>
+            Meditación ThetaHealing
+          </span>
         </Title>
 
         <p
@@ -270,14 +273,7 @@ export default function Contact() {
             mb-6
           `}
         >
-          Y podrás escuchar gratis mi &nbsp; 
-          <span
-            className={`
-              font-bold
-            `}
-          >
-            Meditación ThetaHealing
-          </span>
+          Envíame un mensaje
         </p>
 
         <form
