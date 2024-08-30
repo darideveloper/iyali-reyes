@@ -1,8 +1,5 @@
 const serviceColorimetriaText = `
-  Sabías que los colores pueden hacerte subir el ánimo y hacer que meditación y conexión con sus emociones a través de los colores. Exploraremos cómo ciertos tonos nos hacen sentir y aprenderemos a infundirles nuevos significados para incorporarlos de manera consciente en su vestuario y hasta decoración.
-
-  Descubre los colores que te favorecen y comunican seguridad, credibilidad y autoestima.
-
+  Sabías que los colores pueden hacerte subir el ánimo? Existe una conexión entre tus emociones y los colores que muchas veces te permite o no usarlos. Explora cómo ciertos tonos te hacen sentir y aprender a infundirles nuevos significados para incorporarlos de manera consciente en tu vestuario y hasta tu decoración.
 
   - Analizaremos tus características físicas para definir tu paleta de colores ideal.
   - Los colores que mejor te sientan en el maquillaje.
