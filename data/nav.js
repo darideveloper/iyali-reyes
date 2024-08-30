@@ -15,8 +15,8 @@ export const navItems = [
     "target": "_self"
   },
   {
-    "text": "Experiencia",
-    "link": "/#experience",
+    "text": "Couching 1 - 1",
+    "link": "/#heals",
     "target": "_self"
   }
 ]
