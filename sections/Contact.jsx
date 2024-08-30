@@ -25,6 +25,7 @@ export default function Contact() {
   const [currentPage, setCurrentPage] = useState('')
 
   const servicesNames = servicesData.map(service => service.title)
+  servicesNames.unshift('Coaching de imagen 1 a 1')
 
   // Inputs states
   const [name, setName] = useState('')
@@ -271,6 +272,7 @@ export default function Contact() {
             p-0
             m-0
             mb-6
+            text-center md:text-left
           `}
         >
           Envíame un mensaje
