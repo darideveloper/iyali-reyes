@@ -100,7 +100,6 @@ export default function Workshop({ image, title, text, id }) {
           className={`
             service-data
             markdown
-            no-dots
           `}
         />
       </div>

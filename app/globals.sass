@@ -74,12 +74,8 @@ html
     li
       list-style: inside
       margin-left: 2rem
-
-  &.no-dots
-    ul
-      li
-        list-style: none
-        padding-left: 0
+      &::marker
+        color: theme('colors.brown')
 
 .swal2-confirm.swal2-styled
   background-color: theme('colors.brown-light')
