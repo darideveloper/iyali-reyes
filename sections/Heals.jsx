@@ -33,7 +33,7 @@ export default function Heals() {
         `}
       >
         <Title>
-          Sana a través de tu imagen
+          Coaching Imagen Personal Consciente 1:1
           <span
             className={`
               inline-block
@@ -41,7 +41,7 @@ export default function Heals() {
               leading-relaxed
             `}
           >
-            Coaching Imagen Personal Consciente 1:1
+            Sana a través de tu imagen
           </span>
         </Title>
         <p>
