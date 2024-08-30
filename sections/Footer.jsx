@@ -127,6 +127,8 @@ export default function Footer() {
           mt-2
         `}
       >
+        Iyali Reyes &copy; 2024 - Todos los derechos reservados.
+        &nbsp; &nbsp; 
         Powered by &nbsp;
           <Link 
             href="mailto:darideveloper@gmail.com"
