@@ -49,6 +49,9 @@ export default function Video () {
             link="https://drive.google.com/file/d/1Relkgd_9GN1c0BklrY_C0WST-6fLuWyQ/view?usp=sharing"
             text="Descarga mi último Webinar"
             target="_blank"
+            className={`
+              hidden
+            `}
           />
         </div>
 
