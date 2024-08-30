@@ -53,10 +53,10 @@ export const workshopsData = [
     "text": textWorkshop2,
     "id": "workshop2",
   },
-  {
-    "image": "2025.webp",
-    "title": "2025 New mindset-New image",
-    "text": textWorkshop3,
-    "id": "workshop3",
-  },
+  // {
+  //   "image": "2025.webp",
+  //   "title": "2025 New mindset-New image",
+  //   "text": textWorkshop3,
+  //   "id": "workshop3",
+  // },
 ]
