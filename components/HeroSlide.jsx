@@ -28,22 +28,45 @@ export default function HeroSlide({ index, texts, cta, image }) {
           font-bold
         `}
       >
-        {texts.middle}
+        {
+          texts.middle.map((line, index) => (
+            <span
+              key={index}
+              className={`
+                block
+                my-0 sm:mb-16 last:mb-0
+              `}
+            >
+              {line}
+            </span>
+          ))
+        }
       </span>
       <p
         className={`
-          text-2xl
-          mt-20
+          text-3xl sm:text-4xl
         `}
       >
-        {texts.bottom}
+        {
+          texts.bottom.map((line, index) => (
+            <span
+              key={index}
+              className={`
+                block
+                my-6
+              `}
+            >
+              {line}
+            </span>
+          ))
+        }
       </p>
     </>
   )
 
   const titleClassName = `
     ${fontTitle.className}
-    text-4xl sm:text-4xl lg:text-6xl
+    text-5xl sm:text-6xl md:text-7xl
     flex
     flex-col
     items-center
@@ -89,7 +112,9 @@ export default function HeroSlide({ index, texts, cta, image }) {
       <p
         className={`
           uppercase
-          text-lg
+          text-lg 
+          mb-0 md:mb-4
+          tracking-widest
         `}
       >
         {texts.top}

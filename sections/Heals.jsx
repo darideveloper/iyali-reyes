@@ -8,7 +8,7 @@ import Cta from "@/components/Cta"
 export default function Heals() {
   return (
     <section
-      id="coach"
+      id="heals"
       className={`
         container
         pt-24
