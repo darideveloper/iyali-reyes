@@ -31,7 +31,7 @@ export const heroData = [
     },
     "cta": {
       "text": "Get In",
-      "link": "/#contact"
+      "link": "/#services"
     },
     "image": "iam.webp"
   },
