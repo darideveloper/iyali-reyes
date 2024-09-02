@@ -260,10 +260,7 @@ export default function Contact() {
             p-0
           `}
         >
-          Escucha gratis mi &nbsp; 
-          <span>
-            Meditación ThetaHealing
-          </span>
+          Accede GRATIS a la Meditación de ThetaHealing para Liberar Pensamientos Negativos Hacia Ti Misma
         </Title>
 
         <p
@@ -275,7 +272,7 @@ export default function Contact() {
             text-center md:text-left
           `}
         >
-          Envíame un mensaje
+          Llena el formulario
         </p>
 
         <form
