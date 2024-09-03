@@ -1,5 +1,3 @@
-export const dynamicParams = false
-
 import { servicesData } from "@/data/services"
 import { fontTitle } from "@/data/fonts"
 import { marked } from 'marked'
@@ -8,6 +6,7 @@ import Image from 'next/image'
 import Title from "@/components/Subtitle"
 import Cta from "@/components/Cta"
 
+export const dynamicParams = true
 
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
@@ -16,12 +15,18 @@ export async function generateStaticParams() {
   }))
 }
 
-
 // Multiple versions of this page will be statically generated
-export default async function Page({ params }) {
+export default function Sevice({ params }) {
 
   const { slug } = params
-  const { title, text, price, priceInitial, payLink } = servicesData.find((service) => service.slug === slug)
+  const service = servicesData.find((service) => service.slug === slug)
+
+  if (!service) {
+    // Handle the case where the service is not found
+    return <p>Servicio no encontrado</p>
+  }
+
+  const { title, text, price, priceInitial, payLink } = service
   const textHtml = marked(text)
 
   return (
@@ -77,7 +82,7 @@ export default async function Page({ params }) {
         >
           Hire now!
         </Title>
-        <Cta 
+        <Cta
           link={payLink}
           text={`Reserva con ${priceInitial} MXN`}
           dark={true}
@@ -101,3 +106,4 @@ export default async function Page({ params }) {
     </div>
   )
 }
+
