@@ -53,7 +53,7 @@ const textWorkshop3 = `
 export const workshopsData = [
   {
     "image": "embracing.webp",
-    "title": "Embracing Self-Love in Full Color",
+    "title": "Fashion with Intention: Embracing Self-Love",
     "text": textWorkshop1,
     "id": "workshop1",
   },
