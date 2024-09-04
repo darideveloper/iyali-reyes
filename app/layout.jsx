@@ -13,7 +13,7 @@ export const metadata = {
     default: 'Iyali Reyes | Imagen Personal Consciente'
   },
   siteName: 'Iyali Reyes',
-  description: 'Iyali Reyes, Coach de Imagen Personal Consciente, te ayuda a alinear tu imagen externa con tu esencia y metas personales. Ofrece servicios como Colorimetría Emocional, Closet Detox, y Personal Shopper.',
+  description: 'Iyali Reyes, Asesor de Imagen Personal Consciente, te ayuda a alinear tu imagen externa con tu esencia y metas personales. Ofrece servicios como Colorimetría Emocional, Closet Detox, y Personal Shopper.',
   keywords: [
     "Coach de Imagen",
     "Imagen Personal Consciente",
