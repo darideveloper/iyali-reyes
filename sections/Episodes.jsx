@@ -59,6 +59,7 @@ export default function Episodes() {
                   imageAlt={`Miniatura de episodio destacado: ${episode.title}`}
                   link={episode.link}
                   description={episode.description}
+                  dataAosDelay={index * 200}
                 />
               )
 

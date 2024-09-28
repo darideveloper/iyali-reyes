@@ -240,6 +240,7 @@ export default function Contact() {
                 className={`
                   py-3
                 `}
+                dataAosDelay={index * 200}
               />
             ))
           }

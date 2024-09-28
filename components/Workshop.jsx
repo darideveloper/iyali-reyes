@@ -69,6 +69,8 @@ export default function Workshop({ image, title, text, id }) {
           className={`
             w-full
           `}
+          data-aos="fade-up"
+          data-aos-delay="200"
         />
 
         <Flower

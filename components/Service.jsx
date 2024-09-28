@@ -14,12 +14,14 @@ import CircleImage from './CircleImage'
  * @param {string} props.link - service relative link
  * @returns {JSX.Element}
  */
-export default function Service({ title, imageSrc, imageAlt, link }) {
+export default function Service({ title, imageSrc, imageAlt, link, dataAosDelay = 0 }) {
   return (
     <article
       className={`
         service
       `}
+      data-aos="fade-up"
+      data-aos-delay={dataAosDelay}
     >
       <Link
         href={link}

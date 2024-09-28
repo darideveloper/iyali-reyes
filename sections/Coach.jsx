@@ -82,6 +82,8 @@ export default function Coach() {
         className={`
           w-full sm:w-8/12 md:w-1/2 lg:w-5/12       
         `}
+        data-aos="fade-down"
+        data-aos-delay="300"
       />
     </section>
   )

@@ -80,6 +80,7 @@ export default function Services() {
                   imageSrc={`/images/services/${service.slug}.webp`}
                   imageAlt={`Mi servicio ${service.title}`}
                   link={`/services/${service.slug}`}
+                  dataAosDelay={index * 200}
                 />
               )
 

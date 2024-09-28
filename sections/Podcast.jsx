@@ -14,7 +14,6 @@ export default function Podcast () {
         py-32
       `}
     >
-
       <Image 
         width={1500}
         height={800}
@@ -78,6 +77,8 @@ export default function Podcast () {
             h-44 md:h-64
             m-0
           `}
+          data-aos="fade-down"
+          data-aos-delay="400"
 
         />
 

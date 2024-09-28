@@ -34,6 +34,8 @@ export default function Cta({ link, text, dark, target, className }) {
         inline-block
         ${className}
       `}
+      data-aos="zoom-in"
+      data-aos-delay="200"
     >
       {text}
     </Link>

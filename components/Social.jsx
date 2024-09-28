@@ -13,7 +13,7 @@ import Image from 'next/image'
  * @param {string} props.className - social icon class name
  * @returns {JSX.Element}
  */
-export default function Social ({ title, name, link, small, className }) {
+export default function Social ({ title, name, link, small, className, dataAosDelay = 0 }) {
   return (
     <Link
       href={link}
@@ -31,6 +31,7 @@ export default function Social ({ title, name, link, small, className }) {
         ${className}
       `}
       target="_blank"
+      data-aos="fade-right"
     >
       <Image 
         width={30}

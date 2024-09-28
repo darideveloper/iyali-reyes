@@ -87,6 +87,8 @@ export default function Heals() {
           className={`
             w-full
           `}
+          data-aos="fade-up"
+          data-aos-delay="300"
         />
 
         <Particle 

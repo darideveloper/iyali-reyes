@@ -64,6 +64,7 @@ export default function Experience() {
                 key={index}
                 text={quote.text}
                 author={quote.author}
+                dataAosDelay={index * 400}
               />
             ))
           }

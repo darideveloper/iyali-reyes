@@ -8,7 +8,7 @@ import { fontTitle } from "@/data/fonts"
  * @param {string} props.children
  * @returns {JSX.Element}
  */
-export default function Title ({ children, className }) {
+export default function Title ({ children, className, dataAos = 'fade-up', dataAosDelay = 0 }) {
   return (
     <h2
       className={`
@@ -21,6 +21,8 @@ export default function Title ({ children, className }) {
         leading-loose
         ${className}
       `}
+      data-aos={dataAos}
+      data-aos-delay={dataAosDelay}
     >
       {children}
     </h2>

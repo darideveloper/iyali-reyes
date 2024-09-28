@@ -14,12 +14,14 @@ import CircleImage from '@/components/CircleImage'
  * @param {string} props.link - episode relative link
  * @returns {JSX.Element}
  */
-export default function Episode({ title, imageSrc, imageAlt, link, description }) {
+export default function Episode({ title, imageSrc, imageAlt, link, description, dataAosDelay = 0 }) {
   return (
     <article
       className={`
         episode
       `}
+      data-aos="flip-left"
+      data-aos-delay={dataAosDelay}
     >
       <Link
         href={link}

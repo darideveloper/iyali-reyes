@@ -27,6 +27,7 @@ export default function HeroSlide({ index, texts, cta, image }) {
         className={`
           font-bold
         `}
+        data-aos="fade-up"
       >
         {
           texts.middle.map((line, index) => (
@@ -46,6 +47,8 @@ export default function HeroSlide({ index, texts, cta, image }) {
         className={`
           text-3xl sm:text-4xl
         `}
+        data-aos="fade-down"
+        data-aos-delay="400"
       >
         {
           texts.bottom.map((line, index) => (

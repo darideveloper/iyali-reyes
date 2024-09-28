@@ -6,7 +6,7 @@
  * @param {string} props.text
  * @param {string} props.author
  */
-export default function Quote({ text, author }) {
+export default function Quote({ text, author, dataAosDelay = 0 }) {
   return (
     <article
       className={`
@@ -18,6 +18,8 @@ export default function Quote({ text, author }) {
         justify-center
         gap-8
       `}
+      data-aos="zoom-in"
+      data-aos-delay={dataAosDelay}
     >
 
       <svg
