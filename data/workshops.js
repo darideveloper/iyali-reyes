@@ -47,7 +47,13 @@ const textWorkshop2 = `
 `
 
 const textWorkshop3 = `
-  ### MARTES 15 de OCTUBRE de 2024
+  Tal vez piensas que te falta mucho tiempo para llegar a donde quieres y te frustra verlo tan lejano. ¿Y si encontrarás la manera de acortar ese tiempo y traerlo al presente? ¿Cómo? Pues convirtiéndote en esa persona HOY! 
+
+  ### Razones para entrar a este workshop: 
+
+  * Acorta el camino hacia tu mejor versión: Aprende a traer tu futuro deseado al presente y transformarte desde hoy. 
+  * Conecta tu imagen con tu esencia: Refleja tu verdadero ser a través de tu estilo personal, alineando tu interior con lo que proyectas. 
+  * Vive tu transformación en el presente: No esperes más, tu cambio comienza aquí y ahora. 
 `
 
 export const workshopsData = [
@@ -56,17 +62,29 @@ export const workshopsData = [
     "title": "Fashion with Intention: Embracing Self-Love",
     "text": textWorkshop1,
     "id": "workshop1",
+    "cta": {
+      "text": "",
+      "link": ""
+    }
   },
   {
     "image": "sep-2024.webp",
     "title": "DESPIERTA TU BRILLO INTERNO: desbloquea tu poder con tu amor propio y rompe con las creencias que te impiden Brillar",
     "text": textWorkshop2,
     "id": "workshop2",
+    "cta": {
+      "text": "",
+      "link": ""
+    }
   },
-  // {
-  //   "image": "2025.webp",
-  //   "title": "2025 New mindset-New image",
-  //   "text": textWorkshop3,
-  //   "id": "workshop3",
-  // },
+  {
+    "image": "time-jump.webp",
+    "title": "¿Y si pudieras hacer un salto en el tiempo y ya fueras hoy La persona que siempre has imaginado?",
+    "text": textWorkshop3,
+    "id": "workshop3",
+    "cta": {
+      "text": "Get It Now",
+      "link": "#"
+    }
+  },
 ]

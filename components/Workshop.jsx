@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Flower from '@/components/ornaments/Flower'
 import Subtitle from '@/components/Subtitle'
+import Cta from '@/components/Cta'
 
 import { fontTitle } from '@/data/fonts'
 import { marked } from 'marked'
@@ -13,9 +14,12 @@ import { marked } from 'marked'
  * @param {string} props.title - workshop title
  * @param {string} props.text - workshop
  * @param {string} props.id - workshop html id
+ * @param {obj} props.cta - workshop call to action
+ * @param {string} props.cta.text - call to action text
+ * @param {string} props.cta.link - call to action link
  * @returns {JSX.Element} Workshop component
  */
-export default function Workshop({ image, title, text, id }) {
+export default function Workshop({ image, title, text, id, cta }) {
 
   const textHtml = marked(text)
 
@@ -106,6 +110,25 @@ export default function Workshop({ image, title, text, id }) {
             markdown
           `}
         />
+
+        {
+          cta.text && cta.link &&
+          <div  
+            className={`
+              cta-wrapper
+              w-full
+              text-center
+              mt-8
+            `}
+          >
+            <Cta
+              link={cta.link}
+              text={cta.text.toUpperCase()}
+              dark={true}
+            />
+          </div>
+        }
+
       </div>
 
     </article>
