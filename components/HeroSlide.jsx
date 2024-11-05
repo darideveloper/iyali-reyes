@@ -69,7 +69,7 @@ export default function HeroSlide({ index, texts, cta, image }) {
 
   const titleClassName = `
     ${fontTitle.className}
-    text-5xl sm:text-6xl md:text-7xl
+    text-4xl sm:text-5xl md:text-6xl
     flex
     flex-col
     items-center
