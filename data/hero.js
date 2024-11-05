@@ -1,13 +1,27 @@
 export const heroData = [
   {
     "texts": {
+      "top": '',
+      "middle": [""],
+      "bottom": [""],
+    },
+    "cta": {
+      "text": "Get In",
+      "link": "#",
+      "margin": "big"
+    },
+    "image": "buen-fin.webp"
+  },
+  {
+    "texts": {
       "top": 'Bienvenida a tu nueva piel',
       "middle": ["Imagen Personal", "Consciente"],
       "bottom": ["Iyali Reyes"], 
     },
     "cta": {
       "text": "Get In",
-      "link": "/#heals"
+      "link": "/#heals",
+      "margin": "small"
     },
     "image": "welcome.webp"
   },
@@ -19,7 +33,8 @@ export const heroData = [
     },
     "cta": {
       "text": "Comming soon",
-      "link": "/#contact"
+      "link": "/#contact",
+      "margin": "small"
     },
     "image": "2025.webp"
   },
@@ -31,8 +46,22 @@ export const heroData = [
     },
     "cta": {
       "text": "Get In",
-      "link": "/#services"
+      "link": "/#services",
+      "margin": "small"
     },
-    "image": "iam.webp"
+    "image": "iam.webp",
+  },
+  {
+    "texts": {
+      "top": 'Soy Iyali Reyes',
+      "middle": ["Conoce tu estilo"],
+      "bottom": ["Expresa tu esencia"],
+    },
+    "cta": {
+      "text": "Get In",
+      "link": "/#services",
+      "margin": "small"
+    },
+    "image": "iam.webp",
   },
 ]

@@ -149,7 +149,7 @@ export default function HeroSlide({ index, texts, cta, image }) {
         link={cta.link}
         text={cta.text}
         className={`
-          mt-8
+          ${cta.margin == "big" ? 'mt-96' : 'mt-8'}
         `}
       />
     </div>
