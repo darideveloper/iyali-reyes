@@ -11,7 +11,7 @@ export default function Experience() {
       "author": "Karina Hernández"
     },
     {
-      "text": "Iya fue mi invdersión en mi, me ayudo a descubrir mi estilo, me hizo sentir muy cómoda y que yo lo podía todo, ya no tengo los mismos habitos al vestir, ahora pienso que hare, como me quiero sentir y en qué quiero proyectar antes de vestirme.",
+      "text": "Iya fue mi inversión en mi, me ayudo a descubrir mi estilo, me hizo sentir muy cómoda y que yo lo podía todo, ya no tengo los mismos habitos al vestir, ahora pienso que hare, como me quiero sentir y en qué quiero proyectar antes de vestirme.",
       "author": "Mariana Tomasini"
     },
     {
