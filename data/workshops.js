@@ -84,7 +84,7 @@ export const workshopsData = [
     "id": "workshop3",
     "cta": {
       "text": "Get It Now",
-      "link": "#"
+      "link": "/files/master-class-mix-and-match.pdf"
     }
   },
 ]
