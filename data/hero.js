@@ -19,8 +19,8 @@ export const heroData = [
       "bottom": ["New mindset", "New image"],
     },
     "cta": {
-      "text": "Comming soon",
-      "link": "/#contact",
+      "text": "Get It Now",
+      "link": "#workshop3",
       "margin": "small"
     },
     "image": "2025.webp"
